@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoras.Web", "Monitoras.Web\Monitoras.Web.csproj", "{B1CAE130-B9E8-4775-8267-DA9ECC85701C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoras.Entity", "Monitoras.Entity\Monitoras.Entity.csproj", "{56D1CA2A-403E-410D-9B8E-269C3D856474}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{B1CAE130-B9E8-4775-8267-DA9ECC85701C}.Release|x64.Build.0 = Release|Any CPU
 		{B1CAE130-B9E8-4775-8267-DA9ECC85701C}.Release|x86.ActiveCfg = Release|Any CPU
 		{B1CAE130-B9E8-4775-8267-DA9ECC85701C}.Release|x86.Build.0 = Release|Any CPU
+		{56D1CA2A-403E-410D-9B8E-269C3D856474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D1CA2A-403E-410D-9B8E-269C3D856474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D1CA2A-403E-410D-9B8E-269C3D856474}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{56D1CA2A-403E-410D-9B8E-269C3D856474}.Debug|x64.Build.0 = Debug|Any CPU
+		{56D1CA2A-403E-410D-9B8E-269C3D856474}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{56D1CA2A-403E-410D-9B8E-269C3D856474}.Debug|x86.Build.0 = Debug|Any CPU
+		{56D1CA2A-403E-410D-9B8E-269C3D856474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D1CA2A-403E-410D-9B8E-269C3D856474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D1CA2A-403E-410D-9B8E-269C3D856474}.Release|x64.ActiveCfg = Release|Any CPU
+		{56D1CA2A-403E-410D-9B8E-269C3D856474}.Release|x64.Build.0 = Release|Any CPU
+		{56D1CA2A-403E-410D-9B8E-269C3D856474}.Release|x86.ActiveCfg = Release|Any CPU
+		{56D1CA2A-403E-410D-9B8E-269C3D856474}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
