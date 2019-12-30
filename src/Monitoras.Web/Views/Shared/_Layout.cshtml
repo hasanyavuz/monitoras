@@ -16,29 +16,29 @@
 
     <!-- Icons. Uncomment required icon fonts -->
     <!-- <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css"> -->
-    <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
+    <link rel="stylesheet" href="~/assets/vendor/fonts/ionicons.css">
     <!-- <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css"> -->
     <!-- <link rel="stylesheet" href="assets/vendor/fonts/open-iconic.css"> -->
     <!-- <link rel="stylesheet" href="assets/vendor/fonts/pe-icon-7-stroke.css"> -->
 
     <!-- Core stylesheets -->
-    <link rel="stylesheet" href="assets/vendor/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/vendor/css/appwork.css">
-    <link rel="stylesheet" href="assets/vendor/css/theme-corporate.css">
-    <link rel="stylesheet" href="assets/vendor/css/colors.css">
-    <link rel="stylesheet" href="assets/vendor/css/uikit.css">
+    <link rel="stylesheet" href="~/assets/vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="~/assets/vendor/css/appwork.css">
+    <link rel="stylesheet" href="~/assets/vendor/css/theme-corporate.css">
+    <link rel="stylesheet" href="~/assets/vendor/css/colors.css">
+    <link rel="stylesheet" href="~/assets/vendor/css/uikit.css">
 
     <!-- Load polyfills -->
-    <script src="assets/vendor/js/polyfills.js"></script>
+    <script src="~/assets/vendor/js/polyfills.js"></script>
     <script>document['documentMode']===10&&document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=Intl.~locale.en"><\/script>')</script>
 
     <!-- Layout helpers -->
-    <script src="assets/vendor/js/layout-helpers.js"></script>
+    <script src="~/assets/vendor/js/layout-helpers.js"></script>
 
     <!-- Libs -->
 
     <!-- `perfect-scrollbar` library required by SideNav plugin -->
-    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="~/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
 
     <environment names="Staging,Production">
         <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
@@ -91,18 +91,18 @@
     <!-- Core scripts -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/vendor/libs/popper/popper.js"></script>
-    <script src="assets/vendor/js/bootstrap.js"></script>
-    <script src="assets/vendor/js/sidenav.js"></script>
+    <script src="~/assets/vendor/libs/popper/popper.js"></script>
+    <script src="~/assets/vendor/js/bootstrap.js"></script>
+    <script src="~/assets/vendor/js/sidenav.js"></script>
 
     <!-- Libs -->
 
     <!-- `perfect-scrollbar` library required by SideNav plugin -->
-    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="~/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
     <!-- Main script -->
 
-    <script src="assets/js/main.js"></script>
+    <script src="~/assets/js/main.js"></script>
 
     @RenderSection("scripts", required: false)
 </body>
