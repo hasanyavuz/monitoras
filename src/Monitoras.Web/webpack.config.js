@@ -23,11 +23,15 @@ module.exports = () => {
       alias: isDevBuild ? {
         'vue$': 'vue/dist/vue',
         'components': path.resolve(__dirname, './ClientApp/components'),
+        '@': path.resolve(__dirname, './ClientApp'),
+        'service': path.resolve(__dirname, './ClientApp/services'),
         'views': path.resolve(__dirname, './ClientApp/views'),
         'utils': path.resolve(__dirname, './ClientApp/utils'),
         'api': path.resolve(__dirname, './ClientApp/store/api')
       } : {
         'components': path.resolve(__dirname, './ClientApp/components'),
+        '@': path.resolve(__dirname, './ClientApp'),
+        'service': path.resolve(__dirname, './ClientApp/services'),
         'views': path.resolve(__dirname, './ClientApp/views'),
         'utils': path.resolve(__dirname, './ClientApp/utils'),
         'api': path.resolve(__dirname, './ClientApp/store/api')
