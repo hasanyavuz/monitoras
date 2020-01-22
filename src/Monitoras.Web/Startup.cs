@@ -8,7 +8,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Monitoras.Entity;
-using Monitoras.Web.Providers;
 
 namespace Monitoras.Web {
     public class Startup {
@@ -63,9 +62,6 @@ namespace Monitoras.Web {
             // Add framework services.
             services.AddMvc ()
                 .SetCompatibilityVersion (CompatibilityVersion.Version_2_2);
-
-            // Simple example with dependency injection for a data provider.
-            services.AddSingleton<IWeatherProvider, WeatherProviderFake> ();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
