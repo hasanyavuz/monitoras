@@ -7,6 +7,7 @@ namespace Monitoras.Entity {
     public class MTDMonitor {
         [Key]
         public Guid MonitorId { get; set; }
+        public Guid UserId { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }
         public string Name { get; set; }
