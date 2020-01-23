@@ -2,19 +2,21 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Monitoras.Entity;
 
 namespace Monitoras.Web.Controllers {
     public class MonitoringController : ApiController {
         [HttpGet]
-        public IActionResult Get () {
-            return Json (null);
+        public async Task<IActionResult> Get () {
+            var list = await Db.Monitors.ToListAsync ();
+            return Success (null, list);
         }
 
         [HttpPost]
         public async Task<IActionResult> Post ([FromBody] MTDMonitor value) {
-            if(string.IsNullOrEmpty(value.Name)){
-                return Error("Name is required.");
+            if (string.IsNullOrEmpty (value.Name)) {
+                return Error ("Name is required.");
             }
 
             var dataObject = new MTDMonitor {
