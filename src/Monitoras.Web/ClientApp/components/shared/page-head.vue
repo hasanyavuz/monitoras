@@ -18,7 +18,6 @@ export default {
       type: String
     },
     icon: {
-      default: "Monitoras",
       type: String
     }
   }
