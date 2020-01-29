@@ -18,4 +18,8 @@ namespace Monitoras.Entity {
         HeaderExists = 3,
         BodyContains = 4
     }
+
+    public class MTDSMonitorStepSettingsRequest {
+        public string Url { get; set; }
+    }
 }
