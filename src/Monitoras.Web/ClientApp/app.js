@@ -12,6 +12,11 @@ import VueContentPlaceholders from 'vue-content-placeholders'
 
 Vue.use(VueContentPlaceholders)
 
+import VueApexCharts from 'vue-apexcharts'
+Vue.use(VueApexCharts)
+
+Vue.component('apexchart', VueApexCharts)
+
 // Input Controls
 import MTIText from 'components/input/text'
 
