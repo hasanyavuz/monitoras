@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
 namespace Monitoras.Entity {
     [Table ("MonitorStep")]
@@ -10,6 +11,10 @@ namespace Monitoras.Entity {
         public Guid MonitorId { get; set; }
         public MTDMonitorStepTypes Type { get; set; }
         public string Settings { get; set; }
+
+        public MTDSMonitorStepSettingsRequest SettingsAsRequest () {
+            return JsonConvert.DeserializeObject<MTDSMonitorStepSettingsRequest> (Settings);
+        }
     }
 
     public enum MTDMonitorStepTypes : short {
