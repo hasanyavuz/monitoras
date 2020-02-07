@@ -17,7 +17,7 @@
                 <router-link
                   :to="{name : 'monitoring-view', params:{id:item.monitorId}}"
                   class="btn btn-sm btn-secondary"
-                >View Dashboard</router-link>
+                >Dashboard</router-link>
                 <router-link
                   :to="{name : 'monitoring-save', params:{id:item.monitorId}}"
                   class="btn btn-sm btn-primary"
@@ -67,7 +67,7 @@ export default {
           },
           colors: ["#DCE6EC"],
           title: {
-            text: "$99,34 %",
+            text: "99,34 %",
             offsetX: 0,
             style: {
               fontSize: "20pt",

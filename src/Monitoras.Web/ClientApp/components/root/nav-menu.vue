@@ -6,7 +6,7 @@
         <li v-if="route.divider" :key="index" class="sidenav-divider mt-0 mb-0"></li>
         <li v-else-if="!route.hidden" class="sidenav-item" :key="index">
           <router-link
-            :to="route.path"
+            :to="{ name: route.name }"
             exact-active-class="active"
             class="sidenav-link"
             v-if="route.component"
