@@ -16,18 +16,20 @@ namespace Monitoras.Entity {
         public DateTime LastCheckDate { get; set; }
         public decimal UpTime { get; set; }
         public int LoadTime { get; set; }
-        public short MonitorTime { get; set; }
+        public int MonitorTime { get; set; }
     }
 
     public enum MTDMonitorStatusTypes : short {
-        Down = 0,
+        Unknown = 0,
         Up = 1,
-        Warning = 2
+        Down = 2,
+        Warning = 3
     }
 
     public enum MTDTestStatusTypes : short {
-        Fail = 0,
+        Unknown = 0,
         AllPassed = 1,
-        Warning = 2
+        Fail = 2,
+        Warning = 3
     }
 }

@@ -13,10 +13,6 @@ namespace Monitoras.Entity {
         public DateTime EndDate { get; set; }
         public MTDMonitorStepStatusTypes Status { get; set; }
         public string Log { get; set; }
-    }
-
-    public enum MTDMonitorStepStatusTypes : short {
-        Fail = 0,
-        Success = 1
+        public int Interval { get; set; }
     }
 }
