@@ -13,6 +13,7 @@ namespace Monitoras.Entity {
         public string Settings { get; set; }
         public int Interval { get; set; }
         public MTDMonitorStepStatusTypes Status { get; set; }
+        public DateTime LastCheckDate { get; set; }
 
         public MTDSMonitorStepSettingsRequest SettingsAsRequest () {
             return JsonConvert.DeserializeObject<MTDSMonitorStepSettingsRequest> (Settings);
@@ -22,9 +23,10 @@ namespace Monitoras.Entity {
     public enum MTDMonitorStepStatusTypes : short {
         Unknown = 0,
         Pending = 1,
-        Success = 2,
-        Fail = 3,
-        Warning = 4
+        Processing = 2,
+        Success = 3,
+        Warning = 4,
+        Fail = 5,
     }
 
     public enum MTDMonitorStepTypes : short {
