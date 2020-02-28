@@ -20,11 +20,15 @@ Vue.component('apexchart', VueApexCharts)
 // Input Controls
 import MTIText from 'components/input/text'
 
+// View Components
+import MTVMonitorStatus from 'components/shared/monitor-status'
+
 Vue.use(Notifications)
 
 // Registration of global components
 Vue.component('icon', FontAwesomeIcon)
 Vue.component('page-head', PageHead)
+Vue.component('mtv-monitor-status', MTVMonitorStatus)
 
 // Registration for input controls
 Vue.component('mti-text', MTIText)
