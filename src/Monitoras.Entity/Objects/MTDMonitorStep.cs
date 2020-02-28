@@ -27,6 +27,7 @@ namespace Monitoras.Entity {
         Success = 3,
         Warning = 4,
         Fail = 5,
+        Error = 6
     }
 
     public enum MTDMonitorStepTypes : short {
